@@ -431,3 +431,22 @@ footer {
 footer p {
   text-align: center;
 }
+.coming-soon-container {
+   border: 2px solid rgb(111, 103, 103);
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-left: 80px;
+   padding-right:80px;
+   border-radius: 2rem;
+}
+.coming-soon-container:hover{
+    transform: scale(1.01);
+}
+.details-container:hover{
+    transform: scale(1.01);
+
+}
+.contact-info-upper-container:hover{
+    transform: scale(1.01);
+  
+}
