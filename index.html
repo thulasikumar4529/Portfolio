@@ -1,287 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Thulasikumar S</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#Skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">ThulasiKumar S</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#Skills" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title" style="text-shadow:2px 2px 2px grey;">THULASIKUMAR S</h1>
-        <p class="section__text__p2">Software Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='http://www.linkedin.com/in/thulasikumar-s'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/thulasikumar4529'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="assets/profile-pic.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Bachelor of Computer Science Engineering<br />Software developer - Minor Degree</p>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THULASIKUMAR S - Full Stack Developer</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href='https://unicons.iconscout.com/release/v4.0.0/css/line.css' rel='stylesheet'>
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />   
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">THULASIKUMAR S</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
             </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Seeking for a job to pursue a
-              highly rewarding career and
-              healthy work environment
-              where I can utilize my skills
-              and knowledge efficiently
-              for the organizational
-              growth.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="Skills">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Skills</h1>
-      <div class="Skills-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="Skills-sub-title">Data Stack</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java, Python</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MYSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML,CSS,JS</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Figma</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="uil uil-apps"></i>
             </div>
-          </div>
-          <div class="details-container">
-            <h2 class="Skills-sub-title">Tech Stack</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Basic</p>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content">
+                    <h1 class="home__title">Hi, I'm THULASIKUMAR S</h1>
+                    <h3 class="home__subtitle">Full-Stack Developer</h3>
+                    <p class="home__description">Building modern and responsive web applications with cutting-edge technologies and creative solutions.</p>
+                    <a href="#contact" class="button button--flex">Contact Me <i class="uil uil-message"></i></a>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Sqlite</h3>
-                  <p>Basic</p>
+                <div class="home__image">
+                    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#6c63ff" />
+                                <stop offset="100%" stop-color="#ff6584" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="250" cy="250" r="200" fill="url(#gradient)" opacity="0.8" />
+                        <path d="M150,250 Q250,150 350,250 T250,350 Z" fill="#fff" opacity="0.9" />
+                        <circle cx="250" cy="250" r="80" fill="#fff" />
+                        <text x="250" y="250" text-anchor="middle" fill="#6c63ff" font-family="Arial" font-size="40" font-weight="bold" dy=".3em">TK</text>
+                    </svg>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Flask</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>IBM</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
             </div>
-          </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section__title">About Me</h2>
+                <div class="about__container">
+                    <div class="about__image">
+                        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="profileGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#6c63ff" />
+                                    <stop offset="100%" stop-color="#ff6584" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="200" cy="200" r="180" fill="url(#profileGradient)" />
+                            <circle cx="200" cy="150" r="40" fill="#fff" />
+                            <ellipse cx="200" cy="280" rx="100" ry="70" fill="#fff" />
+                        </svg>
+                    </div>
+                    <div class="about__content">
+                        <p class="about__description">I'm a passionate full-stack developer with 3+ years of experience in creating robust web applications. My expertise spans across both frontend and backend technologies, allowing me to build complete solutions from concept to deployment.</p>
+                        <p class="about__description">I specialize in PHP, Python, JavaScript, and modern frameworks. My approach combines technical excellence with creative problem-solving to deliver applications that are both functional and delightful to use.</p>
+                        <p class="about__description">When I'm not coding, you can find me contributing to open-source projects, exploring new technologies, or mentoring aspiring developers.</p>
+                        <div class="about__stats">
+                            <div class="about__stat">
+                                <h3>5+</h3>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div class="about__stat">
+                                <h3>3+</h3>
+                                <p>Years Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!--==================== SKILLS ====================-->
+<section class="skills section" id="skills">
+    <div class="container">
+        <h2 class="section__title">Skills</h2>
+        <div class="skills__content">
+            <div class="skills__card">
+                <h3>Frontend</h3>
+                <ul class="skills__list">
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>React.js</li>
+                    <li>JSP (Java Server Pages)</li>
+                    <li>Responsive Design</li>
+                </ul>
+            </div>
+            <div class="skills__card">
+                <h3>Backend</h3>
+                <ul class="skills__list">
+                    <li>Core Java</li>
+                    <li>J2EE (Servlets, JSP)</li>
+                    <li>Hibernate (ORM)</li>
+                    <li>JDBC (Database Connectivity)</li>
+                    <li>RESTful APIs</li>
+                </ul>
+            </div>
+            <div class="skills__card">
+                <h3>Database</h3>
+                <ul class="skills__list">
+                    <li>Oracle</li>
+                    <li>MySQL</li>
+                    <li>SQL Queries (DDL, DML, Joins)</li>
+                    <li>Sub-Queries & Functions</li>
+                    <li>Database Optimization</li>
+                </ul>
+            </div>
+            <div class="skills__card">
+                <h3>Tools & Technologies</h3>
+                <ul class="skills__list">
+                    <li>Eclipse IDE</li>
+                    <li>SQL-Yog</li>
+                    <li>Apache Tomcat</li>
+                    <li>Git & GitHub</li>
+                    <li>Windows OS</li>
+                </ul>
+            </div>
         </div>
-      </div>
-    <section id="projects">
-  <h1 class="title">Projects</h1>
-  <div class="coming-soon-container">
-    <p><h1>RESUME BUILDER</h1><br>
-        <li>Resume Builder is the web
-        application which helps
-        students to get their
-        resume in hand just by
-        filling up a simple form
-        where important
-        credentials need to be
-        filled.</li><br>
-        <li>The resume is
-        downloadable in PDF
-        format. Also ,the user can
-        log in again to access the
-        previous resume that he
-        had made.</li><br>
-        <li>TECH STACK :
-        HTML,CSS,PHP,MySQL</li>
-    </p><br><hr><br>
-        <p><h1>E-COMMERCE APPLICATION ON IBM CLOUD FOUNDRY</h1><br>
-      
-        <li>Build a artisanal e-Commerce platform using
-           IBM foundry</li><br>
-        <li>Connect the skilled
-            artisans with the global
-            audience.</li><br>
-        <li>Showcase handmade
-            products from exquisite
-            jewelry to artistic home
-            decor.</li><br>
-        <li>TECH STACK : Python3,
-            Sqlite,Flask</li>
-        
-    </p>
-  </div>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:kumar.thulasi4529@gmail.com">kumar.thulasi4529@gmail.com</a></p>
+    </div>
+</section>
+
+
+<!--==================== QUALIFICATION ====================-->
+<section class="qualification section" id="qualification">
+    <div class="container">
+        <h2 class="section__title">Qualification</h2>
+        <div class="qualification__container">
+            <div class="qualification__timeline">
+
+                <div class="qualification__item">
+                    <h3 class="qualification__title">Java Full-Stack Developer Training</h3>
+                    <p class="qualification__subtitle">JSpiders, Vadapalani Chennai</p>
+                    <p class="qualification__date">2025 - 2025</p>
+                    <p class="qualification__description">Completed in-depth training on Java, J2EE, JDBC, SQL, Hibernate, and Web Technologies.</p>
+                </div>
+
+                <div class="qualification__item">
+                    <h3 class="qualification__title">B.E Computer Science Engineering</h3>
+                    <p class="qualification__subtitle">Anna University Regional Campus, Coimabatore</p>
+                    <p class="qualification__date">2022 - 2025</p>
+                    <p class="qualification__description">Graduated with 82% aggregate. Studied core Java, databases, and web development.</p>
+                </div>
+
+                <div class="qualification__item">
+                    <h3 class="qualification__title">Diploma Computer Science Engineering</h3>
+                    <p class="qualification__subtitle">Guru Raagavendria Polytechnic Collage, Veppore</p>
+                    <p class="qualification__date">2019 - 2022</p>
+                    <p class="qualification__description">Graduated with 92% aggregate. Studied basic Java, databases, and web development.</p>
+                </div>
+
+                <div class="qualification__item">
+                    <h3 class="qualification__title">Higher Secondary Education (HSC)</h3>
+                    <p class="qualification__subtitle">Govt Higher Secondary School, Kallapadi</p>
+                    <p class="qualification__date">2020</p>
+                </div>
+
+                <div class="qualification__item">
+                    <h3 class="qualification__title">Secondary School (SSLC)</h3>
+                    <p class="qualification__subtitle">Govt Higher Secondary School, Kallapadi</p>
+                    <p class="qualification__date">2017</p>
+                </div>
+
+            </div>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="http://www.linkedin.com/in/thulasikumar-s">LinkedIn</a></p>
+    </div>
+</section>
+
+
+        <!--==================== SERVICES ====================-->
+        <section class="services section" id="services">
+            <div class="container">
+                <h2 class="section__title">Services</h2>
+                <div class="services__container">
+                    <div class="service__card">
+                        <div class="service__icon">
+                            <i class="uil uil-brackets-curly"></i>
+                        </div>
+                        <h3 class="service__title">Web Development</h3>
+                        <p class="service__description">Custom website development from simple landing pages to complex web applications with modern technologies.</p>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__icon">
+                            <i class="uil uil-mobile-android"></i>
+                        </div>
+                        <h3 class="service__title">Responsive Design</h3>
+                        <p class="service__description">Creating websites that look and function perfectly on all devices - desktops, tablets, and smartphones.</p>
+                    </div>
+                    <div class="service__card">
+                        <div class="service__icon">
+                            <i class="uil uil-server"></i>
+                        </div>
+                        <h3 class="service__title">Backend Integration</h3>
+                        <p class="service__description">Building robust backend systems, APIs, and database solutions to power your applications.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <h2 class="section__title">Portfolio</h2>
+                <div class="swiper-container portfolio__container">
+                    <div class="swiper-wrapper">
+                        <!-- Portfolio item 1 -->
+                        <div class="swiper-slide">
+                            <div class="portfolio__content">
+                                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Resume Builder" class="portfolio__img">
+                                <div class="portfolio__info">
+                                    <h3 class="portfolio__title">Resume Builder</h3>
+                                    <p class="portfolio__description">A web application that allows users to create professional resumes with customizable templates.</p>
+                                    <a href="#" class="portfolio__link">View Project <i class="uil uil-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item 2 -->
+                        <div class="swiper-slide">
+                            <div class="portfolio__content">
+                                <img src="https://images.unsplash.com/photo-1607082350899-7e105aa886ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="E-Commerce Platform" class="portfolio__img">
+                                <div class="portfolio__info">
+                                    <h3 class="portfolio__title">E-Commerce Platform</h3>
+                                    <p class="portfolio__description">A full-featured online store with product management, cart functionality, and payment integration.</p>
+                                    <a href="#" class="portfolio__link">View Project <i class="uil uil-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Portfolio item 3 -->
+                        <div class="swiper-slide">
+                            <div class="portfolio__content">
+                                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Task Management" class="portfolio__img">
+                                <div class="portfolio__info">
+                                    <h3 class="portfolio__title">Task Management System</h3>
+                                    <p class="portfolio__description">A collaborative platform for teams to manage projects, assign tasks, and track progress.</p>
+                                    <a href="#" class="portfolio__link">View Project <i class="uil uil-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PROJECT IN MIND ====================-->
+        <section class="project section">
+            <div class="container">
+                <h2 class="section__title">Have a Project in Mind?</h2>
+                <a href="#contact" class="button button--flex">Let's Talk <i class="uil uil-comment-alt-message"></i></a>
+            </div>
+        </section>
+
+        <!--==================== TESTIMONIAL ====================-->
+        <section class="testimonial section">
+            <div class="container">
+                <h2 class="section__title">Testimonial</h2>
+                <div class="testimonial__container">
+                    <div class="testimonial__content">
+                        <p class="testimonial__text">"Thulasikumar transformed our outdated website into a modern, responsive platform that perfectly represents our brand. His attention to detail and technical expertise were impressive throughout the project."</p>
+                        <p class="testimonial__author"> </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section__title">Contact Me</h2>
+                <div class="contact__container">
+                    <div class="contact__info">
+                        <div class="contact__item">
+                            <div class="contact__icon">
+                                <i class="uil uil-envelope"></i>
+                            </div>
+                            <div class="contact__details">
+                                <h3>Email</h3>
+                                <p>kumar.thulasi4529@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__icon">
+                                <i class="uil uil-map-marker"></i>
+                            </div>
+                            <div class="contact__details">
+                                <h3>Location</h3>
+                                <p>Vellore, India</p>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__icon">
+                                <i class="uil uil-phone"></i>
+                            </div>
+                            <div class="contact__details">
+                                <h3>Phone</h3>
+                                <p>+91 93457 32901</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="" class="contact__form">
+                        <input type="text" class="contact__input" placeholder="Your Name" required>
+                        <input type="email" class="contact__input" placeholder="Your Email" required>
+                        <input type="text" class="contact__input" placeholder="Subject">
+                        <textarea class="contact__input" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="button button--flex">Send Message <i class="uil uil-message"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copy">&#169; 2025 Thulasikumar. All rights reserved</p>
         </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; THULASIKUMAR. All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
-  </body>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class="uil uil-arrow-up scrolltop__icon"></i>
+    </a>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        // Initialize Swiper
+        const swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                992: {
+                    slidesPerView: 3,
+                }
+            }
+        });
+
+        // Mobile Menu Toggle
+        const navMenu = document.getElementById('nav-menu');
+        const navToggle = document.getElementById('nav-toggle');
+        
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        
+        // Close menu when clicking a nav link
+        document.querySelectorAll('.nav__link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+        
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Scroll to top
+        const scrollTop = document.getElementById('scroll-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollTop.classList.add('active');
+            } else {
+                scrollTop.classList.remove('active');
+            }
+        });
+        
+        // Animation on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.about__image, .about__content, .skills__card, .service__card, .qualification__item');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if (elementPosition < screenPosition) {
+                    element.classList.add('animated');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+        
+        // Initialize animations on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            // Trigger initial animations
+            animateOnScroll();
+            
+            // Set header state
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            }
+            
+            // Set scroll top state
+            if (window.scrollY > 300) {
+                scrollTop.classList.add('active');
+            }
+        });
+    </script>
+</body>
+
 </html>
