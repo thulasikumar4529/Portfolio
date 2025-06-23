@@ -239,19 +239,35 @@
             color: var(--dark-color);
         }
         
-        .home__image {
-            position: absolute;
-            top: 50%;
-            right: -40%;
-            transform: translateY(-50%);
-            width: 45%;
-            opacity: 0;
-            animation: fadeIn 1s forwards 0.5s;
+       .home__image {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem 0;
         }
-        
+
+        .home__image img {
+            width: 250px;       /* Exact size as requested */
+            height: 250px;      /* Maintain the square aspect ratio */
+            border-radius: 50%; /* Optional: makes it circular */
+            object-fit: cover;  /* Ensures the image scales properly */
+            animation: fadeIn 1s ease-in-out forwards;
+            opacity: 0;
+        }
+
+        /* Simple fade-in animation */
         @keyframes fadeIn {
             to {
                 opacity: 1;
+            }
+        }
+
+        /* Responsive adjustment for smaller screens */
+        @media screen and (max-width: 768px) {
+            .home__image img {
+                width: 180px;
+                height: 180px;
             }
         }
         
