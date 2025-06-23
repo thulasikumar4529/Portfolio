@@ -57,7 +57,6 @@
             text-align: center;
             margin-bottom: 4rem;
             position: relative;
-            color: var(--dark-color);
         }
         
         .section__title::after {
@@ -318,7 +317,7 @@
         
         .skills::before {
             content: '';
-            position: absolute;
+            position: relative;
             top: 0;
             left: 0;
             width: 100%;
