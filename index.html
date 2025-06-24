@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THULASIKUMAR S - Full Stack Developer</title>
-    
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
-    
     <!-- Icons -->
-    <link href='https://unicons.iconscout.com/release/v4.0.0/css/line.css' rel='stylesheet'>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />   
-    <!-- Stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
@@ -30,6 +24,7 @@
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#qualification" class="nav__link">Qualification</a></li>
                     <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
                     <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
@@ -37,7 +32,7 @@
             </div>
 
             <div class="nav__toggle" id="nav-toggle">
-                <i class="uil uil-apps"></i>
+                <i class="fas fa-bars"></i>
             </div>
         </nav>
     </header>
@@ -48,10 +43,10 @@
         <section class="home section" id="home">
             <div class="home__container container grid">
                 <div class="home__content">
-                    <h1 class="home__title">Hi, I'm THULASIKUMAR S</h1>
+                    <h1 class="home__title">Hi, I'm <span style="color: var(--primary-color);">THULASIKUMAR S</span></h1>
                     <h3 class="home__subtitle">Full-Stack Developer</h3>
                     <p class="home__description">Building modern and responsive web applications with cutting-edge technologies and creative solutions.</p>
-                    <a href="#contact" class="button button--flex">Contact Me <i class="uil uil-message"></i></a>
+                    <a href="#contact" class="button button--flex">Contact Me <i class="fas fa-envelope"></i></a>
                 </div>
                 <div class="home__image">
                     <img src="assets/profile-pic.jpg" alt="Profile Image">
@@ -69,7 +64,7 @@
                     </div>
                     <div class="about__content">
                         <p class="about__description">I'm a passionate full-stack developer with 1+ years of experience in creating robust web applications. My expertise spans across both frontend and backend technologies, allowing me to build complete solutions from concept to deployment.</p>
-                        <p class="about__description">I specialize in PHP, Python, JavaScript, and modern frameworks. My approach combines technical excellence with creative problem-solving to deliver applications that are both functional and delightful to use.</p>
+                        <p class="about__description">I specialize in Java, J2EE, JavaScript, and modern frameworks. My approach combines technical excellence with creative problem-solving to deliver applications that are both functional and delightful to use.</p>
                         <p class="about__description">When I'm not coding, you can find me contributing to open-source projects, exploring new technologies, or mentoring aspiring developers.</p>
                         <div class="about__stats">
                             <div class="about__stat">
@@ -86,101 +81,97 @@
             </div>
         </section>
 
-<!--==================== SKILLS ====================-->
-<section class="skills section" id="skills">
-    <div class="container">
-        <h2 class="section__title">Skills</h2>
-        <div class="skills__content">
-            <div class="skills__card">
-                <h3>Frontend</h3>
-                <ul class="skills__list">
-                    <li>HTML5 & CSS3</li>
-                    <li>JavaScript (ES6+)</li>
-                    <li>React.js</li>
-                    <li>JSP (Java Server Pages)</li>
-                    <li>Responsive Design</li>
-                </ul>
-            </div>
-            <div class="skills__card">
-                <h3>Backend</h3>
-                <ul class="skills__list">
-                    <li>Core Java</li>
-                    <li>J2EE (Servlets, JSP)</li>
-                    <li>Hibernate (ORM)</li>
-                    <li>JDBC (Database Connectivity)</li>
-                    <li>RESTful APIs</li>
-                </ul>
-            </div>
-            <div class="skills__card">
-                <h3>Database</h3>
-                <ul class="skills__list">
-                    <li>Oracle</li>
-                    <li>MySQL</li>
-                    <li>SQL Queries (DDL, DML, Joins)</li>
-                    <li>Sub-Queries & Functions</li>
-                    <li>Database Optimization</li>
-                </ul>
-            </div>
-            <div class="skills__card">
-                <h3>Tools & Technologies</h3>
-                <ul class="skills__list">
-                    <li>Eclipse IDE</li>
-                    <li>SQL-Yog</li>
-                    <li>Apache Tomcat</li>
-                    <li>Git & GitHub</li>
-                    <li>Windows OS</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!--==================== QUALIFICATION ====================-->
-<section class="qualification section" id="qualification">
-    <div class="container">
-        <h2 class="section__title">Qualification</h2>
-        <div class="qualification__container">
-            <div class="qualification__timeline">
-
-                <div class="qualification__item">
-                    <h3 class="qualification__title">Java Full-Stack Developer Training</h3>
-                    <p class="qualification__subtitle">JSpiders, Vadapalani Chennai</p>
-                    <p class="qualification__date">2025 - 2025</p>
-                    <p class="qualification__description">Completed in-depth training on Java, J2EE, JDBC, SQL, Hibernate, and Web Technologies.</p>
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <h2 class="section__title">Skills</h2>
+                <div class="skills__content">
+                    <div class="skills__card">
+                        <h3>Frontend</h3>
+                        <ul class="skills__list">
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>React.js</li>
+                            <li>JSP (Java Server Pages)</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+                    <div class="skills__card">
+                        <h3>Backend</h3>
+                        <ul class="skills__list">
+                            <li>Core Java</li>
+                            <li>J2EE (Servlets, JSP)</li>
+                            <li>Hibernate (ORM)</li>
+                            <li>JDBC (Database Connectivity)</li>
+                            <li>RESTful APIs</li>
+                        </ul>
+                    </div>
+                    <div class="skills__card">
+                        <h3>Database</h3>
+                        <ul class="skills__list">
+                            <li>Oracle</li>
+                            <li>MySQL</li>
+                            <li>SQL Queries (DDL, DML, Joins)</li>
+                            <li>Sub-Queries & Functions</li>
+                            <li>Database Optimization</li>
+                        </ul>
+                    </div>
+                    <div class="skills__card">
+                        <h3>Tools & Technologies</h3>
+                        <ul class="skills__list">
+                            <li>Eclipse IDE</li>
+                            <li>SQL-Yog</li>
+                            <li>Apache Tomcat</li>
+                            <li>Git & GitHub</li>
+                            <li>Windows OS</li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="qualification__item">
-                    <h3 class="qualification__title">B.E Computer Science Engineering</h3>
-                    <p class="qualification__subtitle">Anna University Regional Campus, Coimabatore</p>
-                    <p class="qualification__date">2022 - 2025</p>
-                    <p class="qualification__description">Graduated with 82% aggregate. Studied core Java, databases, and web development.</p>
-                </div>
-
-                <div class="qualification__item">
-                    <h3 class="qualification__title">Diploma Computer Science Engineering</h3>
-                    <p class="qualification__subtitle">Guru Raagavendria Polytechnic Collage, Veppore</p>
-                    <p class="qualification__date">2019 - 2022</p>
-                    <p class="qualification__description">Graduated with 92% aggregate. Studied basic Java, databases, and web development.</p>
-                </div>
-
-                <div class="qualification__item">
-                    <h3 class="qualification__title">Higher Secondary Education (HSC)</h3>
-                    <p class="qualification__subtitle">Govt Higher Secondary School, Kallapadi</p>
-                    <p class="qualification__date">2020</p>
-                </div>
-
-                <div class="qualification__item">
-                    <h3 class="qualification__title">Secondary School (SSLC)</h3>
-                    <p class="qualification__subtitle">Govt Higher Secondary School, Kallapadi</p>
-                    <p class="qualification__date">2017</p>
-                </div>
-
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section" id="qualification">
+            <div class="container">
+                <h2 class="section__title">Qualification</h2>
+                <div class="qualification__container">
+                    <div class="qualification__timeline">
+                        <div class="qualification__item">
+                            <h3 class="qualification__title">Java Full-Stack Developer Training</h3>
+                            <p class="qualification__subtitle">JSpiders, Vadapalani Chennai</p>
+                            <p class="qualification__date">2025 - 2025</p>
+                            <p class="qualification__description">Completed in-depth training on Java, J2EE, JDBC, SQL, Hibernate, and Web Technologies.</p>
+                        </div>
+
+                        <div class="qualification__item">
+                            <h3 class="qualification__title">B.E Computer Science Engineering</h3>
+                            <p class="qualification__subtitle">Anna University Regional Campus, Coimabatore</p>
+                            <p class="qualification__date">2022 - 2025</p>
+                            <p class="qualification__description">Graduated with 82% aggregate. Studied core Java, databases, and web development.</p>
+                        </div>
+
+                        <div class="qualification__item">
+                            <h3 class="qualification__title">Diploma Computer Science Engineering</h3>
+                            <p class="qualification__subtitle">Guru Raagavendria Polytechnic Collage, Veppore</p>
+                            <p class="qualification__date">2019 - 2022</p>
+                            <p class="qualification__description">Graduated with 92% aggregate. Studied basic Java, databases, and web development.</p>
+                        </div>
+
+                        <div class="qualification__item">
+                            <h3 class="qualification__title">Higher Secondary Education (HSC)</h3>
+                            <p class="qualification__subtitle">Govt Higher Secondary School, Kallapadi</p>
+                            <p class="qualification__date">2020</p>
+                        </div>
+
+                        <div class="qualification__item">
+                            <h3 class="qualification__title">Secondary School (SSLC)</h3>
+                            <p class="qualification__subtitle">Govt Higher Secondary School, Kallapadi</p>
+                            <p class="qualification__date">2017</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!--==================== SERVICES ====================-->
         <section class="services section" id="services">
@@ -189,21 +180,21 @@
                 <div class="services__container">
                     <div class="service__card">
                         <div class="service__icon">
-                            <i class="uil uil-brackets-curly"></i>
+                            <i class="fas fa-code"></i>
                         </div>
                         <h3 class="service__title">Web Development</h3>
                         <p class="service__description">Custom website development from simple landing pages to complex web applications with modern technologies.</p>
                     </div>
                     <div class="service__card">
                         <div class="service__icon">
-                            <i class="uil uil-mobile-android"></i>
+                            <i class="fas fa-mobile-alt"></i>
                         </div>
                         <h3 class="service__title">Responsive Design</h3>
                         <p class="service__description">Creating websites that look and function perfectly on all devices - desktops, tablets, and smartphones.</p>
                     </div>
                     <div class="service__card">
                         <div class="service__icon">
-                            <i class="uil uil-server"></i>
+                            <i class="fas fa-server"></i>
                         </div>
                         <h3 class="service__title">Backend Integration</h3>
                         <p class="service__description">Building robust backend systems, APIs, and database solutions to power your applications.</p>
@@ -225,7 +216,7 @@
                                 <div class="portfolio__info">
                                     <h3 class="portfolio__title">Resume Builder</h3>
                                     <p class="portfolio__description">A web application that allows users to create professional resumes with customizable templates.</p>
-                                    <a href="#" class="portfolio__link">View Project <i class="uil uil-arrow-right"></i></a>
+                                    <a href="#" class="portfolio__link">View Project <i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -236,7 +227,7 @@
                                 <div class="portfolio__info">
                                     <h3 class="portfolio__title">E-Commerce Platform</h3>
                                     <p class="portfolio__description">A full-featured online store with product management, cart functionality, and payment integration.</p>
-                                    <a href="#" class="portfolio__link">View Project <i class="uil uil-arrow-right"></i></a>
+                                    <a href="#" class="portfolio__link">View Project <i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -247,7 +238,7 @@
                                 <div class="portfolio__info">
                                     <h3 class="portfolio__title">Task Management System</h3>
                                     <p class="portfolio__description">A collaborative platform for teams to manage projects, assign tasks, and track progress.</p>
-                                    <a href="#" class="portfolio__link">View Project <i class="uil uil-arrow-right"></i></a>
+                                    <a href="#" class="portfolio__link">View Project <i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -262,7 +253,7 @@
         <section class="project section">
             <div class="container">
                 <h2 class="section__title">Have a Project in Mind?</h2>
-                <a href="#contact" class="button button--flex">Let's Talk <i class="uil uil-comment-alt-message"></i></a>
+                <a href="#contact" class="button button--flex">Let's Talk <i class="fas fa-comments"></i></a>
             </div>
         </section>
 
@@ -273,7 +264,7 @@
                 <div class="testimonial__container">
                     <div class="testimonial__content">
                         <p class="testimonial__text">"Thulasikumar transformed our outdated website into a modern, responsive platform that perfectly represents our brand. His attention to detail and technical expertise were impressive throughout the project."</p>
-                        <p class="testimonial__author"> </p>
+                        <p class="testimonial__author">- Project Manager at TechSolutions Inc.</p>
                     </div>
                 </div>
             </div>
@@ -287,7 +278,7 @@
                     <div class="contact__info">
                         <div class="contact__item">
                             <div class="contact__icon">
-                                <i class="uil uil-envelope"></i>
+                                <i class="fas fa-envelope"></i>
                             </div>
                             <div class="contact__details">
                                 <h3>Email</h3>
@@ -296,7 +287,7 @@
                         </div>
                         <div class="contact__item">
                             <div class="contact__icon">
-                                <i class="uil uil-map-marker"></i>
+                                <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div class="contact__details">
                                 <h3>Location</h3>
@@ -305,7 +296,7 @@
                         </div>
                         <div class="contact__item">
                             <div class="contact__icon">
-                                <i class="uil uil-phone"></i>
+                                <i class="fas fa-phone-alt"></i>
                             </div>
                             <div class="contact__details">
                                 <h3>Phone</h3>
@@ -318,7 +309,7 @@
                         <input type="email" class="contact__input" placeholder="Your Email" required>
                         <input type="text" class="contact__input" placeholder="Subject">
                         <textarea class="contact__input" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="button button--flex">Send Message <i class="uil uil-message"></i></button>
+                        <button type="submit" class="button button--flex">Send Message <i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>
@@ -334,7 +325,7 @@
 
     <!--==================== SCROLL TOP ====================-->
     <a href="#" class="scrolltop" id="scroll-top">
-        <i class="uil uil-arrow-up scrolltop__icon"></i>
+        <i class="fas fa-arrow-up"></i>
     </a>
 
     <!--==================== SWIPER JS ====================-->
@@ -429,5 +420,4 @@
         });
     </script>
 </body>
-
 </html>
