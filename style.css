@@ -213,8 +213,10 @@
         }
         
         .home__container {
-            position: relative;
-            z-index: 2;
+                position: relative;
+                display:grid;
+                grid-template-columns: 1fr 1fr;
+                z-index: 2;
         }
         
         .home__content {
