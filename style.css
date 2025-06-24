@@ -113,7 +113,7 @@
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
+            width: auto;
             background-color: rgba(31, 31, 56, 0.95);
             z-index: 1000;
             box-shadow: var(--shadow-sm);
